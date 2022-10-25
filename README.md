@@ -45,3 +45,6 @@ from the terminal before the input prompt appears. If your machine is too quick,
 
 
 ![Opening new tab](./assets/new-tab.gif)
+
+Figure 2: The terminal pauses for a moment before presenting the input prompt. This is the shell program
+loading the configuration file before giving the user control.
