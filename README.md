@@ -109,7 +109,7 @@ The first sets the input prompt format. The second loads loads a ruby version ma
 I can call upon it anywhere when using the command line. Similarly with the third and fourth blocks, both
 pyenv (python equivelant to rbenv) and nvm (node equivelant to rbenv) are loaded as well. 
 
-### Environment Variables
+## Environment Variables and PATH code-along
 
 In each of these blocks, several instances of the phrase 'export CAPITAL_WORD' can be seen. This is how you 
 can define environment variables. Environment variables, in the context of a shell program, are just variables
@@ -186,11 +186,21 @@ because you added the location to your path. To undo this, delete the `~/scripts
 and delete the line we added to your configuration file. Then once again, run one of the above `source` commands 
 to restore everything back to the way it was.
 
+## Conclusion
 
+Alright, that's enough about that for today. I hope that my understanding of this information helps you as well.
+It has taken me some time to really come to terms with most of the material here, so I've done my best to compress
+it into a concise yet sympathetic write-up. There is so much to be said about each of these topics that, much
+like a file system exponentially expands, each topic creates a new set of sub-topics to investigate. If you, like
+me find, these topics to be curious, there's many more explanations to be seen online. I hope that both the
+shell program (bash/zsh) and your terminal program are no longer completely mysterious, and can be understood as
+two programs working together to provide the input prompt to the user. Additionally, the shell program can be
+configured to include certain locations in its PATH, so we can execute certain commands anywhere in our file system.
+Like PATH, there are several shell environment variables that both us, the user, and our shell program can utilize!
 
+I hope this was helpful. Additionally, I apologize if you find any errors in my explanation. If I were you,
+I would understand if you just disregarded the article wholeheartedly. However, if you have the desire,
+please send any comments or corrections via an 'issue', or a DM. It would be greatly appreciated in knowing
+the correct information is being circulated.
 
-
-
-
-
-
+wb19
