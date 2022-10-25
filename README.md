@@ -85,8 +85,20 @@ the configuration file for my zsh shell.
 
 `cat ~/.zshrc`
 
+or
 
+`cat ~/.zshrc`
 
+depending on if you are using bash or zsh. Going forward, you can replace the word bash or zsh with each other
+as you see fit. I will be using zsh, but regardless, I will be explicit when the commands between
+zsh and bash diverge.
+
+### Contents of the rc file
+
+Your rc file represents how your shell gets ready before starting. Because each person's computer is different,
+mine will look different than yours. It should look similar, but not the same. Here's mine:
+
+![.zshrc file example](./assets/rc-file.png)
 
 
 
