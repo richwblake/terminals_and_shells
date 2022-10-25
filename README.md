@@ -25,4 +25,4 @@ at its most basic level, provides a prompt for the user to input commands, and e
 is received. The command from the user could be a program, like `ls` or `cd`. Both of these 'commands' are 
 actually programs that we call upon to do their jobs. 
 
-![Screenshot]('./assets/Screen Shot 2022-10-25 at 12.45.05 PM.png')
+![Screenshot](./assets/Screen-Shot-2022-10-25-at-12.45.05-PM.png)
