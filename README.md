@@ -8,7 +8,7 @@
 - What are shell environment variables ($USER, $PATH)
 - What does adding to the PATH mean, and how is it done, and why is it useful?
 
-### The Terminal
+## The Terminal
 
 The terminal is the entry point to our demo. The terminal provides an application space for us to be able to
 interact with out computer. The terminal's job is to load and run a shell program, like one of the several
@@ -18,7 +18,7 @@ computers, everyone that wanted to use a computer was forced to use the terminal
 regularly use the mouse, shell programs aren't nearly as commonly used as they once were. As a software
 developer, you will find the terminal to be the most effective way to write programs and develop software.
 
-### Shell Programs
+## Shell Programs
 
 A shell program provides all of the functionality you are used to while using the terminal. This program,
 at its most basic level, provides a prompt for the user to input commands, and each one is processed as it
@@ -36,7 +36,7 @@ Now, we can see how the terminal and a shell program interact with each other. T
 for anything to happen, like an empty canvas when beginning to paint something. The paintbrush and paint are 
 the shell, which in turn allow you to create whatever you wish. 
 
-### Configuration files (not so bad)
+## Configuration files (not so bad)
 
 Configuration files are what allow you, the user, to specify to your shell program everything it needs to 
 start up. These files, usually ending in `rc`, only run when the shell program is started. You can actually
