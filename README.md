@@ -48,3 +48,28 @@ from the terminal before the input prompt appears. If your machine is too quick,
 
 > Figure 2: The terminal pauses for a moment before presenting the input prompt. This is the shell program
 loading the configuration file before giving the user control.
+
+Something to note, is that these file do not have the file extension `.rc`. They simply end with the characters
+'rc'. Another interesting thing to note about these files is that they begin with a period. On Unix-like 
+systems (macOS and WSL/Linux), a file beginning with a period means that file is hidden to the user by default.
+It can be exposed by checking the 'show hidden files and folders' setting for your file explorer, or they can
+be viewed with `ls` by passing the flag `-a`, which stands for 'all'. So `ls -a` will show both regular and
+hidden folders and files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
