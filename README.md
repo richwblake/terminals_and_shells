@@ -100,9 +100,28 @@ mine will look different than yours. It should look similar, but not the same. H
 
 ![.zshrc file example](./assets/rc-file.png)
 
+> Figure 3: An example of an rc file with several different defined processes. The first line, beginning with
+`PS1`, specifies the format of the input prompt. You can customize it by changing the string to which it is
+assigned. 
 
+Each of these blocks of code does something before the shell is started, and we can start inputting commands.
+The first sets the input prompt format. The second loads loads a ruby version manager called `rbenv`, so that
+I can call upon it anywhere when using the command line. Similarly with the third and fourth blocks, both
+pyenv (python equivelant to rbenv) and nvm (node equivelant to rbenv) are loaded as well. 
 
+### Environment Variables
 
+In each of these blocks, several instances of the phrase 'export CAPITAL_WORD' can be seen. This is how you 
+can define environment variables. Environment variables, in the context of a shell program, are just variables
+that can be accessed from any place in your file system. Often times, the shell itself uses the variables to complete the user's
+request. If you have ever encountered a situation where the solution was adding something to your PATH, this
+is what it was referencing. If you include a certain directory in your PATH, zsh will look there in order to 
+carry out your command. Here's an example.
+
+The goal of our example is this. We type `say_hi` in the shell input prompt, and 'hello, world!' is printed
+to the screen. Not a very complicated or useful program, but if you type `say_hi` in your terminal now,
+it will report back that it isn't sure what you mean. By understanding how to define custom commands, like 
+`say_hi`, you can make much more sophisticated scripts to help you do your job!
 
 
 
