@@ -44,4 +44,4 @@ observe this process in real time. Go ahead and open a terminal window or tab. Y
 from the terminal before the input prompt appears. If your machine is too quick, take a look at mine below.
 
 
-![Opening new tab](./assets/new-tab.gif.gif)
+![Opening new tab](./assets/new-tab.gif)
