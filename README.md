@@ -123,6 +123,68 @@ to the screen. Not a very complicated or useful program, but if you type `say_hi
 it will report back that it isn't sure what you mean. By understanding how to define custom commands, like 
 `say_hi`, you can make much more sophisticated scripts to help you do your job!
 
+First, let's add the script that will provide the functionality for the `say_hi`. In the terminal, type this
+command:
+
+`mkdir ~/scripts`
+
+to create a new folder inside your home directory called `scripts`. Then, let's create a new file called 
+`say_hi`. Note, this file does not have an extension. Instead, we tell zsh to interpret this file as a `zsh`
+file with a *shebang*, and a path to the program we want to use to interpret the file. At the top of the `say_hi`
+file, include the following shebang:
+
+`#!/usr/bin/env bash`
+
+This will tell both zsh and bash to use bash to process the file say_hi. This is okay, because say_hi will do
+only one thing, which is a bash command. Go ahead and place it below the shebang
+
+`echo "hello, world!"`
+
+This one line does exactly what we set out to do, which is print `hello, world!` to the terminal screen. Save
+that file, and exit. Now, we need to add this location, `~/scripts` to our PATH. This will allow us to type
+`say_hi` at any location in our terminal, and it will always run our say_hi script.
+
+Open your configuration file by using either:
+
+`code ~/.zshrc`
+
+or
+
+`code ~/.bashrc`
+
+depending on which shell you are using. Then, at the bottom, place the following line:
+
+`export PATH="$PATH:$HOME/scripts"`
+
+Let's pick this one apart. The first part, `export PATH=` tells the shell to rewrite the PATH variable to a new
+value, which is what follows directly after the equals sign. The next part `$PATH:$HOME/scripts`, is a little
+less clear. There are two existing environment variables at work here. $PATH, which is the already existing PATH
+value, and $HOME, which is the location of your home directory. $HOME/scripts is the location of our newly
+created script! The colon between $PATH and $HOME is important. This is how we separate different locations
+within the single $PATH variable. Without the colon, we could only specify one location! For example, if the PATH
+variables looked like this
+
+`/usr/bin:/usr/share`
+
+Both the locations `/usr/bin` and `/usr/share` will both be searched whenever a command is issued via the command
+line. The reason we are using it our example is because we don't want to overwrite the PATH variable, but add 
+another location to it, specifically our `~/scripts` location.
+
+Finally, let's reload the configuration file with
+
+`source ~/.zshrc` 
+
+or for bash:
+
+`source ~/.bashrc`
+
+And that's it. You can now issue the command `say_hi`, and your shell program will know where to look to find it
+because you added the location to your path. To undo this, delete the `~/scripts` folder with the command:
+
+`rm -rf ~/scripts`
+
+and delete the line we added to your configuration file. Then once again, run one of the above `source` commands 
+to restore everything back to the way it was.
 
 
 
