@@ -60,6 +60,8 @@ likely be `zsh` if you are using macOS, and `bash` if you are using Linux/WSL. T
 especially within the context of our discussion today. More information about environment variables later on
 in the README.
 
+### A quick aside about file names
+
 Something to note, is that these configuration files do not have the file extension `.rc`. The file name simply ends with the characters
 'rc'. Another interesting thing to note about these files is that they begin with a period. On Unix-like 
 systems (macOS and WSL/Linux), a file beginning with a period means that file is hidden to the user by default.
