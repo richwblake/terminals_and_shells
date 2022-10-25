@@ -27,7 +27,7 @@ actually programs that we call upon to do their jobs.
 
 ![Screenshot](./assets/Screen-Shot-2022-10-25-at-12.45.05-PM.png)
 
-Figure 1: The shell program used by macOS by default is zsh. This program, along with bash (a very popular shell)
+> Figure 1: The shell program used by macOS by default is zsh. This program, along with bash (a very popular shell)
 are both stored in a folder called bin, which itself lies in the root folder of the operating system. Other
 programs you may recognize here are `ls`, `cd`, `mkdir`, amongst others. There programs are provided by the
 operating system, so they will work from the moment you start your computer for the first time.
@@ -46,5 +46,5 @@ from the terminal before the input prompt appears. If your machine is too quick,
 
 ![Opening new tab](./assets/new-tab.gif)
 
-Figure 2: The terminal pauses for a moment before presenting the input prompt. This is the shell program
+> Figure 2: The terminal pauses for a moment before presenting the input prompt. This is the shell program
 loading the configuration file before giving the user control.
