@@ -85,7 +85,7 @@ The first option is much less typing, and will only be worse depending on your u
 configuration file is to use the `cat` program. Cat allows us to print a file's text in our terminal. Let's print
 the configuration file for my zsh shell. 
 
-`cat ~/.zshrc`
+`cat ~/.bashrc`
 
 or
 
